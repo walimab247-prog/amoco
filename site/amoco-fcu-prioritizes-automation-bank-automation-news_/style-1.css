@@ -1,0 +1,18 @@
+.clearfix { }
+.clearfix::after, .clearfix::before { display: table; content: ""; line-height: 0; }
+.clearfix::after { clear: both; }
+@-moz-document url-prefix("") { @media (min-width: 768px) {
+  .tdm-header-style-3 .td-main-menu-logo a img { top: -1px; }
+} }
+.tdm-descr { font-family: var(--td_default_google_font_1,'Open Sans','Open Sans Regular',sans-serif); font-size: 16px; line-height: 28px; color: rgb(102, 102, 102); margin-bottom: 30px; }
+@media (max-width: 1018px) {
+  .tdm-descr { font-size: 15px; line-height: 24px; }
+}
+@media (min-width: 768px) and (max-width: 1018px) {
+  .tdm-descr { margin-bottom: 25px; }
+}
+@media (max-width: 767px) {
+  .tdm-descr { margin-bottom: 20px; }
+}
+.tdm-inline-block { display: inline-block; }
+@font-face { font-family: "multipurpose"; src: url("") format("embedded-opentype"), url("") format("woff"), url("") format("truetype"), url("") format("svg"); font-style: normal; font-weight: normal; }
